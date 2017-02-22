@@ -23,7 +23,6 @@ describe("index.js", function(){
 
         index.postToKairos(metrics, function(){ });
 
-        console.log('first call args ', stub.firstCall.args);
 
         sinon.assert.calledWith(stub, postBody);
 
